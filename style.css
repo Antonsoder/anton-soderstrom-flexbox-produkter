@@ -8,6 +8,7 @@
 body{
   background-image: url(https://www.wsupercars.com/wallpapers/Polestar/2020-Polestar-1-011-1080.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav{
@@ -17,8 +18,8 @@ nav{
 
 nav ul{
   list-style:none;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /*Allt inom denna clasen stannar på samma rad*/
+  flex-wrap: wrap; /*Om ett objekt inte får plats så åker den under längst till vänster*/
   align-items: center;
   justify-content: center;
 }
@@ -37,7 +38,7 @@ nav ul li.Meny{
 }
 
 nav ul li.logga{
-  flex: 1;
+  flex: 1; /*Flex 1 gör så att en logga tar upp all plats från kant till kant i en viss ram*/
   color: white;
   font-size: 23px;
   font-weight: 600;
@@ -55,13 +56,42 @@ nav ul li:hover a{
   color: grey;
 }
 
+.container{
+  display: flex;
+  justify-content: left;
+  margin-top: 30px;
+
+  margin-left: 800px;
+}
+
+.item1{
+  flex-grow: 1;
+  background-color: white;
+  margin: 20px;
+  width: 50%;
+  height: 50%;
+  color: white; 
+}
 
 h1{
+  display: flex;
+}
+.tag{
+  display: flex;
   position: absolute;
   left: 5%;
   top: 35%;
   animation-duration: 3s;
   animation-name: slidein;
+}
+
+.modeller{
+  display: flex;
+  position: absolute;
+  transform: translate(50%, -50%);
+  left: 65%;
+  top: 15%;
+
 }
 
 @keyframes slidein {
@@ -82,12 +112,17 @@ h1{
   color: orange;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   font-size: 16px;
-  margin: 200px 120px;
+  margin: 30px 120px;
   cursor: pointer;
   transition: all .2s ease-in-out;
   background-color: black;
+ 
+}
+
+.btn{
+  display: flex;
+  flex: 1;
 }
 
 .button1:hover{
@@ -95,6 +130,7 @@ h1{
 }
 
 .footer {
+  display: flex;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -102,7 +138,23 @@ h1{
   background-color: rgb(241, 237, 237);
   color: black;
   text-align: center;
+  justify-content: center; /*Centrerar texten*/
+  flex-direction: column; /*Gör så att båda <p> taggarna hamnar under varandra.*/
 }
 
+.container{
+  display: flex;
+  justify-content: left;
+  margin-top: 30px;
+  width: 197.568;
+  margin-left: 800px;
+}
 
+.item{
+  flex-grow: 1;
+  background-color: white;
+  margin: 20px;
+  width: 197.568px;
+  height: 104.958px;
+  color: white; 
 
