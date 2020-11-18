@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body{
+  background-image: url(https://www.wsupercars.com/wallpapers/Polestar/2020-Polestar-1-011-1080.jpg);
+  background-size: cover;
+}
+
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+
+nav ul{
+  list-style:none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+nav ul li.Meny{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.logga{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: grey;
+}
+
+
+h1{
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+.button1{
+  border: none;
+  color: orange;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 200px 120px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-color: black;
+}
+
+.button1:hover{
+  background-color: gray;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(241, 237, 237);
+  color: black;
+  text-align: center;
+}
+
+
+
