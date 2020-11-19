@@ -12,7 +12,7 @@ body{
 }
 
 nav{
-  background: #151515;
+  background: black;
   padding: 5px 40px;
 }
 
@@ -60,7 +60,6 @@ nav ul li:hover a{
   display: flex;
   justify-content: left;
   margin-top: 30px;
-
   margin-left: 800px;
 }
 
@@ -76,6 +75,7 @@ nav ul li:hover a{
 h1{
   display: flex;
 }
+
 .tag{
   display: flex;
   position: absolute;
@@ -157,4 +157,4 @@ h1{
   width: 197.568px;
   height: 104.958px;
   color: white; 
-
+}

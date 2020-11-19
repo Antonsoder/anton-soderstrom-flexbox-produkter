@@ -1,75 +1,144 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
+
 nav{
-    background: #151515;
-    padding: 5px 40px;
+  background:black;
+  padding: 5px 40px;
   }
   
-  nav ul{
-    list-style:none;
-    display: flex; /*Allt inom denna clasen stannar på samma rad*/
-    flex-wrap: wrap; /*Om ett objekt inte får plats så åker den under längst till vänster*/
-    align-items: center;
-    justify-content: center;
+nav ul{
+  list-style:none;
+  display: flex; /*Allt inom denna clasen stannar på samma rad*/
+  flex-wrap: wrap; /*Om ett objekt inte får plats så åker den under längst till vänster*/
+  align-items: center;
+  justify-content: center;
   }
   
-  nav ul li{
-    padding: 15px 0;
-    cursor: pointer;
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
   }
   
-  nav ul li.Meny{
-    position: relative;
-    width: auto;
-    margin: 0 16px;
-    text-align: center;
-    order: 3;
+nav ul li.Meny{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
   }
   
-  nav ul li.logga{
-    flex: 1; /*Flex 1 gör så att en logga tar upp all plats från kant till kant i en viss ram*/
-    color: white;
-    font-size: 23px;
-    font-weight: 600;
-    cursor: default;
-    user-select: none;
-  }
+nav ul li.logga{
+  flex: 1; /*Flex 1 gör så att en logga tar upp all plats från kant till kant i en viss ram*/
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
   
-  nav ul li a{
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    transition: .4s;
-  }
-  nav ul li:hover a{
-    color: grey;
-  }
-  
-.container1{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: 400px;
-  }
-  
-.item1{
-    flex: 1;
-    background-color: white;
-    margin: 20px;
-    width: 50%;;
-    height: 50%;
-    color: white; 
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
 }
 
-.item2{
-    flex: 1;
-    background-color: white;
-    margin: 20px;
-    width: 60%;;
-    height: 60%;
-    color: white; 
+nav ul li:hover a{
+  color: grey;
+}
+  
+
+h1{
+  position: absolute;
+  transform: translate(50%,-50%);
+  left: 40%;
+  top: 20%;
+}
+
+.p1{
+  position: absolute;
+  transform: translate(50%,-50%);
+  left: 0%;
+  top: 70%;
+  width: 180px;
+}
+
+.kontakt{
+  position: absolute;
+  transform: translate(50%,-50%);
+  left: 0%;
+  top: 25%;
+}
+
+.tid{
+  position: absolute;
+  transform: translate(50%,-50%);
+  left: -9%;
+  top: 33%;
+}
+
+.addres{
+  position: absolute;
+  transform: translate(50%,-50%);
+  left: 10%;
+  top: 50%;
+  width: 200px;
+}
+
+.addres1{
+  position: absolute;
+  transform: translate(50%,-50%);
+  left: 30%;
+  top: 50%;
+  width: 200px;
+}
+
+.nummer{
+  position: absolute;
+  transform: translate(50%,-50%);
+  left: 50%;
+  top: 50%;
+  width: 170px;
+}
+
+.addres + .addres1 + .nummer{
+flex-wrap: wrap;
+}
+
+.container1{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin: 20px;
+}
+
+  
+.button2{
+  display: flex;
+  border: none;
+  color: orange;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 500px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-color: orange;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(241, 237, 237);
+  color: black;
+  text-align: center;
+  justify-content: center; /*Centrerar texten*/
+  flex-direction: column; /*Gör så att båda <p> taggarna hamnar under varandra.*/
 }
