@@ -60,7 +60,7 @@ nav ul li:hover a{
   display: flex;
   justify-content: left;
   margin-top: 30px;
-  margin-left: 800px;
+
 }
 
 .item1{
@@ -144,17 +144,20 @@ h1{
 
 .container{
   display: flex;
-  justify-content: left;
+  justify-content: center;
   margin-top: 30px;
-  width: 197.568;
-  margin-left: 800px;
+  width: 200px;
+  align-items: center;
+  margin-left: 73%;
 }
 
 .item{
   flex-grow: 1;
   background-color: white;
   margin: 20px;
-  width: 197.568px;
-  height: 104.958px;
+  width: 100%;
+  height: auto;
+
   color: white; 
 }
+
